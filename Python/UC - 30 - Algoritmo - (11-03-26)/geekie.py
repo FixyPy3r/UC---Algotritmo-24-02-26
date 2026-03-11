@@ -17,5 +17,8 @@ print("Média: ", aluno["media"])
 if aluno["media"] >= 7:
     print("Você está aprovado")
 
+elif 5 <= aluno["media"] < 6.9:
+    print("Recuperação")
+
 if aluno["media"] <= 5:
     print("Reprovado")
