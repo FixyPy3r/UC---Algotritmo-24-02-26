@@ -11,4 +11,4 @@ elif total >= 120:
 elif total >= 100:
     print("Pao")
 else:
-    print("N")
+    print("Não tem premio meu bom")
