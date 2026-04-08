@@ -5,10 +5,10 @@ Bolo = int(input())
 total = Pao * 1 + Doce * 2 + Bolo * 3
 
 if total >= 150:
-    print("B")
+    print("Bolo")
 elif total >= 120:
-    print("D")
+    print("Doce")
 elif total >= 100:
-    print("P")
+    print("Pao")
 else:
     print("N")
