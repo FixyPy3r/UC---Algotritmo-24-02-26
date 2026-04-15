@@ -9,6 +9,6 @@ def media():
         return
     
     media = nota1 + nota2 + nota3 /3
-    print("Sua média final vai ser", media)
+    print(f"Sua média final vai ser {media:.2f}")
 
 media()
