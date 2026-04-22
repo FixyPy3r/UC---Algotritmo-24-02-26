@@ -6,7 +6,7 @@ max_idade = 19
 turmas = ["A", "B"]
 
 # Lista principal
-# Cada aluno é feito por um dicionário com nome, idade e turma
+# Cada aluno é baseado num dicionario com nome, turma e idade
 
 lista_alunos = []
 
@@ -77,9 +77,9 @@ def cadastrar_aluno():
     while continuar:
 
         # Dados
-        nome = input("\nDigite o nome do aluno: ")
-        idadetxt = input("Digite a idade do aluno: ")
-        turma = input("Digite a turma do aluno: ")
+        nome = input("\nDigite seu nome: ")
+        idadetxt = input("Digite sua idade: ")
+        turma = input("Digite sua turma: ")
 
         # Validação
         dados_validos = validar_dados(nome, idadetxt, turma)
@@ -90,7 +90,7 @@ def cadastrar_aluno():
 
             print("\nAluno cadastrado!")
 
-            resposta = input("\nDeseja cadastrar outro aluno? (S/N): ")
+            resposta = input("\nDeseja cadastrar mais um? (S/N)")
 
             # Define se vai executar o loop
             if resposta.upper() == "S":
@@ -117,7 +117,6 @@ def listar_alunos():
         print(f"\nTotal de alunos cadastrados: {len(lista_alunos)}\n")
         print(f"  {'n':<4} {'Nome':<25} {'Idade':<8} {'Turma':<6}")
 
-        # Usamos enumerate para ter o número de ordem (índice + 1)
         for i, aluno in enumerate(lista_alunos):
             numero = i + 1
             # Imprime os dados de cada aluno
@@ -178,7 +177,7 @@ def main():
             buscar_aluno()
 
         elif opcao == "4":
-            print("\nEncerrando o sistema...")
+            print("\nTurning Off...")
             print("Tchau!\n")
             break
         else:
