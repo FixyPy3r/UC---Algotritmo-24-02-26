@@ -33,6 +33,7 @@ def validar_idade(idadetxt):
 
 def validar_turma(turma):
     # Verifica se a turma digitada está na lista de turmas válidas.
+    # converte tudo que esta minusculo em maiusculo
     if turma.upper() in turmas:
         return True
     else:
